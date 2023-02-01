@@ -5,14 +5,14 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <changeSet id="2" author="murat_q">
+    <changeSet id="11" author="murat_q">
         <sqlFile dbms="postgresql"
                  encoding="utf8"
                  endDelimiter="\nGO"
                  relativeToChangelogFile="true"
                  splitStatements="true"
                  stripComments="true"
-                 path="02-add-columns-for-users-table.sql"/>
+                 path="03-create-scooter-table.sql"/>
         <rollback>
             <sqlFile dbms="postgresql"
                      encoding="utf8"
@@ -20,7 +20,7 @@
                      relativeToChangelogFile="true"
                      splitStatements="true"
                      stripComments="true"
-                     path="02-drop-columns-from-users-table.sql"/>
+                     path="03-drop-columns-from-scooter-table.sql"/>
         </rollback>
     </changeSet>
 

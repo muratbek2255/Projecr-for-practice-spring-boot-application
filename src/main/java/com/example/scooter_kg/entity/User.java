@@ -2,8 +2,7 @@ package com.example.scooter_kg.entity;
 
 
 import com.example.scooter_kg.entity.enums.Role;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,7 +13,8 @@ import java.util.Date;
 import java.util.List;
 
 
-@Data
+@Getter
+@Setter
 @Builder
 @Entity
 @Table(name = "users", schema = "scooter_kg")

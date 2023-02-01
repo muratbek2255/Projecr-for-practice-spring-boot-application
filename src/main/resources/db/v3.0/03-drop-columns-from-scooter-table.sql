@@ -1,0 +1,9 @@
+alter table scooter_kg.scooter
+drop column id,
+    drop column title,
+    drop column price,
+    drop column battery,
+    drop column image,
+    drop column quantity,
+    drop column address,
+    drop column qr_code
